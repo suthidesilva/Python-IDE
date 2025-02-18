@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Web IDE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Python Web IDE</h1>
+
+        <textarea id="code-editor" placeholder="Write your Python code here..."></textarea>
+
+        <div class="buttons">
+            <button id="run-btn">▶ Run Code</button>
+            <button id="clear-btn">🗑 Clear</button>
+            <button id="toggle-mode">🌙 Dark Mode</button>
+        </div>
+
+        <div id="output-container">
+            <h2>Output:</h2>
+            <pre id="output">Loading Pyodide...</pre>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.24.1/full/pyodide.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
